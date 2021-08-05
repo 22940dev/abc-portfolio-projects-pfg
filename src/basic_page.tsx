@@ -16,10 +16,10 @@ export function BasicPage(props: {
       <title>{props.title}</title>
       <meta name="description" content={props.meta_desc} />
     </Head>
-    <header class="bg-gray-800 from-green-700 to-blue-600">
+    <header class="bg-gradient-to-r from-purple-500 via-blue-400 to-blue-400">
       <div class="px-4 py-4 flex flex-col sm:flex-row">
         <Link href={props.parent.href}><a class="flex-1 text-white hover:underline flex justify-items-start items-center">&lt; {props.parent.name}</a></Link>
-        <h1 class="flex-0 w-max text-2xl font-bold text-white flex justify-items-start items-center">{props.title}</h1>
+        <h1 class="flex-0 w-max text-4xl font-bold text-red-700 flex justify-items-start items-center">{props.title}</h1>
         <div class="flex-1 flex justify-items-start items-center"></div>
       </div>
     </header>
@@ -33,8 +33,8 @@ export function BasicPage(props: {
     <footer class="bg-gray-600 text-white">
       <div class="max-w-screen-lg mx-auto">
         <div class="p-4">
-          <a href={"https://github.com/pfgithub/pfgithub.github.com/blob/main"+props.filename} target="_blank" rel="noreferrer noopener" class="underline">Source</a> ·{" "}
-          <a href={"https://github.com/pfgithub/pfgithub.github.com/edit/main"+props.filename} target="_blank" rel="noreferrer noopener" class="underline">Edit</a>
+          <a href={"https://github.com/22940dev/22940dev.github.com/blob/main"+props.filename} target="_blank" rel="noreferrer noopener" class="underline">Source</a> ·{" "}
+          <a href={"https://github.com/22940dev/22940dev.github.com/edit/main"+props.filename} target="_blank" rel="noreferrer noopener" class="underline">Edit</a>
         </div>
       </div>
     </footer>
